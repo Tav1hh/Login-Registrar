@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            padding: 10px;
+            background-color: rgb(157, 172, 176);
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .registrar{
+            border: 2px solid black;
+            max-width: 600px;
+            width: 100%;
+            background-color: rgb(127, 140, 144);
+            border-radius:10px 10px 10px 10px;
+            padding: 10px;
+        }
+
+        .registrar .dados-nome{
+            display: flex;
+            justify-content: space-between;
+        }
+        .registrar .dados-nome input{
+            width: 49%;
+            border-radius: 5px;
+            height: 50px;
+            padding: 5px;
+            margin-bottom: 7px;
+            border:none;
+            border-bottom: 1px solid black;
+        }
+        .registrar .dados-email input{
+            width: 100%;
+            border-radius: 5px;
+            height: 50px;
+            padding: 5px;
+            margin-bottom: 7px;
+            border:none;
+            border-bottom: 1px solid black;
+        }
+
+        .login{
+            border: 2px solid black;
+            max-width: 600px;
+            width: 100%;
+            background-color: rgb(127, 140, 144);
+            border-radius:10px 10px 10px 10px;
+            padding: 10px;
+        }
+        .login h1, .registrar h1{
+            text-align: center;
+            padding: 15px;
+        }
+        .campo{
+            width: 100%;
+            border-radius: 5px;
+            height: 50px;
+            padding: 5px;
+            margin-bottom: 7px;
+            border:none;
+            border-bottom: 1px solid black;
+        }
+        .botoes{
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type=submit],button{
+            width: 49%;
+            height: 40px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="registrar">
+            <h1>Registrar</h1>
+            <form action="" autocomplete="off">
+                <div class="dados-nome">
+                    <input type="text" name="nome" id="irnome" placeholder="Nome">
+                    <input type="text" name="sobrenome" id="irsobrenome" placeholder="Sobrenome">
+                </div>
+                <div class="dados-email">
+                    <input type="email" name="email" id="iemail" placeholder="E-mail">
+                    <input type="password" name="senha" id="irsenha" placeholder="Senha">
+                    <input type="password" name="confirm" id="confirm-senha" placeholder="Confirme a Senha">
+                </div>
+                
+                <div class="botoes">
+                    <input type="submit" value="Registrar">
+                    <button>Login</button>
+                </div>
+            </form>
+        </section>
+        <section class="login">
+            <h1>Login</h1>
+            <form action="" autocomplete="off">
+                <input type="email" name="email" id="iemail" placeholder="E-mail" class="campo">
+                <input type="password" name="senha" id="isenha" placeholder="Password" class="campo">
+                <div class="botoes">
+                    <input type="submit" value="Login">
+                    <button>Registrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
